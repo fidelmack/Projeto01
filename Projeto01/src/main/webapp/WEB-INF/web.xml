@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>Projeto01</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ServLog</display-name>
+    <servlet-name>ServLog</servlet-name>
+    <servlet-class>controller.ServLog</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServLog</servlet-name>
+    <url-pattern>/ServLog</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <display-name>FiltroAd</display-name>
+    <filter-name>FiltroAd</filter-name>
+    <filter-class>filter.FiltroAd</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>FiltroAd</filter-name>
+    <url-pattern>/FiltroAd</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletUsuario</display-name>
+    <servlet-name>ServletUsuario</servlet-name>
+    <servlet-class>controller.ServletUsuario</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletUsuario</servlet-name>
+    <url-pattern>/ServletUsuario</url-pattern>
+  </servlet-mapping>
+</web-app>
